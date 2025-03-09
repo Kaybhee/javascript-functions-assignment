@@ -34,4 +34,7 @@ function calculateArea(length, width){
            return "Fail"
        }
    }
-   console.log(scoreCategory(Number(prompt(`Enter your score: `))))   // Note that the prompt() function only works in the browser console. In the node.js environment it does not recognise it at all.
+   console.log(scoreCategory(85))
+
+   
+//    console.log(scoreCategory(Number(prompt(`Enter your score: `))))   // Note that the prompt() function only works in the browser console. In the node.js environment it does not recognise it at all.
