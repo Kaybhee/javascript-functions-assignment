@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functions</title>
+    <style>
+        .wrapper {
+            width: 40%;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: black;
+            border-radius: 12px;
+            padding: 30px 40px;
+        }
+        input {
+            border-radius: 20px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin: 7px;
+            width: 60%;
+        }
+        .wrapper .input-box {
+            width: 100%;
+            /* height: 50px; */
+            margin: 30px 0;
+        }
+        .per-buttons{
+            width: 60%;
+            height: 30px;
+             border: none;border-radius: 10px;
+            margin-left: 40px;
+       
+        }
+        .per-buttons:hover {
+            color: white;
+            background-color: burlywood;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url("1723413801720.jpg") no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins", sans-serif;
+            color: whitesmoke;
+        }
+        .wrapper {
+            width: 30%;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: black;
+            border-radius: 12px;
+            padding: 30px 40px;
+        }
+        .input-box input {
+            width: 90%;
+            height: 90%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 3px solid rgba(255, 255, 255, 0.2);
+            border-radius: 40px;
+            font-size: 15px;
+            padding-left: 20px;
+            color: black;
+            /* transition: all 0.3s ease; */
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <p style="margin: 0;text-align: center;"><b>Area Calculator</b></p>
+    <hr>
+    <div class="input-box">
+        <label for="length">Length:</label>
+        <input style="margin: 5px;" type="number" id="length" placeholder="Enter length" />
+        <br>
+
+        <label for="width">Width:</label>
+        <input style="margin: 5px;" type="number" id="width" placeholder="Enter width" />
+        <br>
+        <button class = "per-buttons"   onclick="calculateArea()">Calculate Area</button>
+        <p class="result" id="result"></p>
+    </div>
+
+<p style="margin: 0;text-align: center;"><b>String reversal</b></p>
+<hr>
+        <div class="input-box">
+            <label for="text">Text </label>
+            <input type="text" id="strings" placeholder="some text"><br><br>
+            <button class = "per-buttons"   onclick="reverseString()"> Reverse string</button>
+            <p id="stringReversal"></p>
+        </div>
+    <div class="input-box">
+        <p style="margin: 0;text-align: center;"><b>Even Number checker</b></p>
+        <hr>
+        <label for="enum">Num Check:</label>
+        <input type="number" id="eveNum" placeholder= "Are you even?"><br><br>
+        <button onclick="isEven()" class="per-buttons">check even</button>
+        <p id="even"></p>
+    </div>
+    <div class="input-box">
+        <p style="margin: 0;text-align: center;"><b>Score Categorizer</b></p>
+        <hr>
+        <label for="num"> Score: </label>
+        <input type="number" id="score"placeholder="Enter a score"><br><br>
+        <button class = "per-buttons"  onclick="scoreCategory()">Check your Performance</button>
+        <p id="studentScores"></p>
+    </div>
+</div>
+    <script src="functions.js"></script>
+</body>
+</html>
