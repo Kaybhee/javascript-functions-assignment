@@ -30,7 +30,7 @@ You can refer to the ```index.js``` file for a less ineractive page using ```nod
 * This function works with a condition, it checks whether a number is divisible by 2, if not, it returns false. The input tag used is wrapped in a ```.length``` so that the input recognises that it has no input, and it originally request for one.
 
 ##### Check score
-This function also contains a conditional statement that checks if a number exceeds a value to return an assessment of a student.
+* This function also contains a conditional statement that checks if a number exceeds a value to return an assessment of a student.
 
 ### Nuggets
 * Use ```node index.js``` to run the standalone js file in the console.
