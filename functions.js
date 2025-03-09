@@ -44,15 +44,15 @@ function scoreCategory(){
     const numbers = document.getElementById('score').value
     if (numbers.length != 0){
         if (numbers >= 90){
-        return document.getElementById('studentScores').innerText = `An Excellent performance`
-    } else if (numbers >= 80){
-        return document.getElementById('studentScores').innerText = `A Very good grade`
-    } else if(numbers >= 70){
-        return document.getElementById('studentScores').innerText = `It's a Pass, you tried!`
-    } else {
-        return document.getElementById('studentScores').innerText = `You Failed, try again`
-    } 
-    } else {
-        document.getElementById('studentScores').innerText = `I am yet to get an input`
-    }
-}
+            return document.getElementById('studentScores').innerText = `An Excellent performance`
+            } else if (numbers >= 80){
+                return document.getElementById('studentScores').innerText = `A Very good grade`
+            } else if(numbers >= 70){
+                return document.getElementById('studentScores').innerText = `It's a Pass, you tried!`
+            } else {
+                return document.getElementById('studentScores').innerText = `You Failed, try again`
+            } 
+            } else {
+                document.getElementById('studentScores').innerText = `I am yet to get an input`
+            }
+        }
