@@ -5,7 +5,7 @@ function calculateArea() {
 
     if (length && width) {
         const area = length * width;
-        document.getElementById('result').innerText = `Area: ${area} square units`;
+        document.getElementById('result').innerText = `Area: ${area}`;
     } else {
         document.getElementById('result').innerText = 'Please enter valid numbers.';
     }
